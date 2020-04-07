@@ -20,7 +20,7 @@ function fortune() {
   var randFortune = fortunes[Math.floor(Math.random() * fortunes.length)];
 
   var nameInput = document.getElementById("fortune-input").value;
-  var output = document.getElementById("fortune-ouput");
+  var output = document.getElementById("fortune-output");
 
   if(nameInput != ""){
     output.innerHTML = randFortune;

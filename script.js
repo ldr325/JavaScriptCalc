@@ -17,14 +17,14 @@ fortuneButton.addEventListener("click",fortune);
 var output = document.getElementById("fortune-output");
 
 function fortune() {
-  var fortunes = [" Nothing lost is nothing gained", " A fresh start will put you on your way", " A new perspective will come with the new year", " Listen to the cat", " A pleasant surprise is waiting for you", " Jack fit on the door", " Feed the cat or suffer"];
+  var fortunes = [" Nothing lost is nothing gained", " A fresh start will put you on your way", " A new perspective will come with the new year", " Listen to the cat", " A pleasant surprise is waiting for you", " Jack fit on the door"];
 
   var randFortune = fortunes[Math.floor(Math.random() * fortunes.length)];
 
   var nameInput = document.getElementById("fortune-input").value;
 
   if(nameInput != ""){
-    output.innerHTML = randFortune;
+    output.innerHTML = nameInput + ", I want you to know: " + randFortune;
     console.log(randFortune);
   }
   else{
